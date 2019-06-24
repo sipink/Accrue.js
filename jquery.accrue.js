@@ -347,6 +347,7 @@
                 counter_interest = 0,
                 counter_payment = 0,
                 counter_balance = parseInt(loan_info.original_amount, 10);
+		 
 
             // Start appending the table rows to our output variable.
             for ( var i=0; i<loan_info.num_payments; i++) { 
@@ -380,12 +381,14 @@
 
             // Push our output content into the output element.
             output_elem.html( output_content );
+	    totalInterest = loan_info.total_interest;
+            totalPayment = loan_info.total_payments_formatted;
         } else {
 
             // Values aren't good yet, show the error.
             output_elem.html( options.error_text );
         }
-
+	x
         // Execute callback, passing in loan information.
         options.callback( elem, loan_info );
     };
