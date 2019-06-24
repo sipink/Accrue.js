@@ -445,7 +445,8 @@
                 total_payments: ( monthly * term ), 
                 total_payments_formatted: ( monthly * term ).toFixed(2), 
                 total_interest: ( ( monthly * term ) - amount ),
-                total_interest_formatted: ( ( monthly * term ) - amount ).toFixed(2)
+                total_interest_formatted: ( ( monthly * term ) - amount ).toFixed(2),
+		original_interest: rate
             };
         } else {
             // The numbers provided won't provide good data as results,
