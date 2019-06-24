@@ -381,7 +381,7 @@
 
             // Push our output content into the output element.
             output_elem.html( output_content );
-	    totalInterest = loan_info.total_interest;
+	    totalInterest = loan_info.total_interest_formatted;
             totalPayment = loan_info.total_payments_formatted;
         } else {
 
