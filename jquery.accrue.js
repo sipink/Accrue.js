@@ -383,6 +383,8 @@
             output_elem.html( output_content );
 	    totalInterest = loan_info.total_interest_formatted;
             totalPayment = loan_info.total_payments_formatted;
+	    document.getElementById("totalInterest").value = totalInterest;
+	    document.getElementById("totalPayment").value = totalPayment;
         } else {
 
             // Values aren't good yet, show the error.
