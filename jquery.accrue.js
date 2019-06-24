@@ -348,7 +348,7 @@
                     '<th class="accrue-balance">Balance</th>'+
                     '</tr></thead><tbody>',
                 //interest_per_payment = loan_info.payment_amount-(loan_info.original_amount/loan_info.num_payments),
-		interest_per_payment = (loan_info.rate * 30 / 360) * (loan_info.original_amount - loan_info.payment_amount) / 100,
+		interest_per_payment = (loan_info.original_interest * 30 / 360) * (loan_info.original_amount - loan_info.payment_amount) / 100,
                 amount_from_balance = loan_info.payment_amount-interest_per_payment,
                 counter_interest = 0,
                 counter_payment = 0,
